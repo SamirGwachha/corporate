@@ -7,17 +7,3 @@
     display: flex;
     justify-content: space-between;
 }
-.placeholder-wrapper span {
-    display: inline-block;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-  }
-  
-  input:focus + .placeholder-wrapper span {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  
-  input:not(:focus) + .placeholder-wrapper span {
-    opacity: 1;
-    transform: translateY(0);
-  }

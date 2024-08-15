@@ -98,7 +98,7 @@ function Header() {
                     key={index}
                     className="flex justify-between items-center px-4 py-2 hover:bg-gray-100 rounded-md transition-colors duration-200"
                   >
-                    <Link href="" className="text-gray-700 hover:text-blue-600">
+                    <Link href="" className="text-gray-700 hover:text-gray-500">
                       {course}
                     </Link>
                     <IoIosArrowForward size={20} className="text-gray-500" />
@@ -125,12 +125,14 @@ function Header() {
           </div>
 
           <div className="mt-5 md:mt-0 hidden md:block">
+            <Link href="feedback">
       <button
         className={`bg-orange-400 py-2 px-4 md:py-3 md:px-6 text-sm rounded-md text-white font-semibold w-full md:w-auto transition-transform duration-300 ease-in-out transform ${isClicked ? 'scale-110 shadow-2xl' : 'scale-100 shadow-md'}`}
         onClick={handleClick}
       >
         Feedback
       </button>
+      </Link>
     </div>
   </div>
 
